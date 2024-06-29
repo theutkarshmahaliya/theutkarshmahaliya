@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Animated Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animated-header">
+        <h1>Your Name</h1>
+        <p>Mechanical Engineer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="animated-section">
+        <h2>About Me</h2>
+        <p>Brief introduction about yourself.</p>
+    </section>
+
+    <section id="experience" class="animated-section">
+        <h2>Experience</h2>
+        <div class="experience-item" onclick="toggleDetails(this)">
+            <h3>Job Title</h3>
+            <p>Company Name</p>
+            <div class="details">
+                <p>Detailed information about the job.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="animated-section">
+        <h2>Skills</h2>
+        <div class="skill">Skill Name <span class="level">90%</span></div>
+    </section>
+
+    <section id="projects" class="animated-section">
+        <h2>Projects</h2>
+        <div class="project-item" onclick="toggleDetails(this)">
+            <h3>Project Title</h3>
+            <div class="details">
+                <p>Detailed information about the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="animated-section">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
